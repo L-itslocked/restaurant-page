@@ -40,6 +40,10 @@
         font-family: var(--primary-font);
         text-transform: uppercase;
       }
+      h3 {
+        font-style: italic;
+        text-transform: none;
+      }
       h5,
       footer i,
       a:hover {
@@ -55,17 +59,22 @@
       .navlink {
         color: var(--primary-color);
       }
+      #logo {
+        display:block;
+        margin: 0 auto;
+        padding-top: -25px;
+      }
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Owl Bar | Home</title>
+    <title>Owl Bar Unofficial| Home</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="hero">
-        <h1>OWL BAR</h1>
-        <img src="" alt="logo" />
+    <div class="container">
+      <div class="hero">    
+        <img src="/OB_Hor_Gold_small.png" alt="logo" class="img-fluid" id="logo"/>
+        <!--fix nav bar; this isn't showing up-->
         <nav class="navbar navbar-expand-lg bg-body-dark">
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -83,7 +92,7 @@
       </div>
       <main>
         <h3>Wise Beyond Our Beers</h3>
-
+<!--add images-->
         <section>
           <div class="container">
             <div class="row">
@@ -149,6 +158,7 @@
         <div><p>Baltimore, MD 21202</p></div>
       </section>
       <footer>
+        <p>Visit the <a href="https://www.theowlbar.com/">official website</a> for The Owl Bar.</p>
         <div>
           <p>
             open-source code on
