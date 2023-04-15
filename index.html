@@ -5,14 +5,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Forum" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
     <script
@@ -40,13 +40,20 @@
         font-family: var(--primary-font);
         text-transform: uppercase;
       }
+
+      h1,
+      h3,
+      h5 {
+        padding-bottom: 0.5rem;
+        margin: 2rem;
+      }
+
       h3 {
         font-style: italic;
         text-transform: none;
       }
       h5,
-      footer i,
-      a:hover {
+      footer i {
         color: var(--heading-color);
       }
       i {
@@ -55,14 +62,51 @@
       a {
         color: var(--primary-color);
       }
-
+      footer {
+        text-align: right;
+        font-size: 11px;
+        color: var(--accent-color);
+        background: gray;
+        padding: 2rem;
+      }
+      footer #github:hover {
+        background: white;
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        color: black;
+      }
+      footer .coder-social:hover {
+        color: var(--accent-color);
+      }
+      footer i {
+        font-size: 1.5rem;
+      }
       .navlink {
         color: var(--primary-color);
       }
+      .section1-img {
+        object-fit: cover;
+        width: 230px;
+        height: 230px;
+      }
+      .socialmedia {
+        font-size: 2rem;
+      }
+      .fa-key,
+      .fa-beer-mug-empty {
+        margin: 0 auto;
+        display: block;
+        padding: 3rem;
+      }
+
       #logo {
-        display:block;
+        display: block;
         margin: 0 auto;
         padding-top: -25px;
+      }
+
+      #official-website {
+        font-size: 10px;
       }
     </style>
     <meta charset="UTF-8" />
@@ -72,16 +116,32 @@
   </head>
   <body>
     <div class="container">
-      <div class="hero">    
-        <img src="/OB_Hor_Gold_small.png" alt="logo" class="img-fluid" id="logo"/>
+      <div class="hero">
+        <img
+          src="/OB_Hor_Gold_small.png"
+          alt="logo"
+          class="img-fluid"
+          id="logo"
+        />
         <!--fix nav bar; this isn't showing up-->
-        <nav class="navbar navbar-expand-lg bg-body-dark">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a href="#" class="nav-link">home</a>
-                <a href="#" class="nav-link">menus</a>
-                <a href="#" class="nav-link">reservations</a>
+                <a href="#" class="nav-link active" aria-current="page">home</a>
+                <a href="#menu" class="nav-link">menus</a>
+                <a href="#reservations" class="nav-link">reservations</a>
                 <a href="#" class="nav-link">special events</a>
                 <a href="#" class="nav-link">history</a>
                 <a href="#contact" class="nav-link">contact</a>
@@ -92,25 +152,39 @@
       </div>
       <main>
         <h3>Wise Beyond Our Beers</h3>
-<!--add images-->
         <section>
           <div class="container">
             <div class="row">
               <div class="col-md-4">
                 <h5>brunch</h5>
-                <img src="" alt="brunch food" />
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/141/original/keesha-s-kitchen-fdjsZkEN-t0-unsplash.jpg?1681514681"
+                  alt="brunch food"
+                  class="img-fluid section1-img"
+                />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" id="menu">
                 <h5>dinner</h5>
-                <img src="" alt="pizza" />
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/142/original/chad-montano-MqT0asuoIcU-unsplash.jpg?1681514694"
+                  alt="pizza"
+                  class="img-fluid section1-img"
+                />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" id="reservations">
                 <h5>reservations</h5>
-                <img src="" alt="bar" />
+                <img
+                  src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/143/original/Screen-Shot-2022-04-14-at-11.53.50-PM.png?1681514719"
+                  alt="Owl Bar Restaurant interior"
+                  class="img-fluid section1-img"
+                />
               </div>
+            </div>
           </div>
         </section>
       </main>
+      <i class="fa-regular fa-beer-mug-empty"></i>
       <section id="contact">
         <h5>Contact</h5>
         <div class="email">
@@ -157,21 +231,29 @@
         <div><p>1 East Chase Street</p></div>
         <div><p>Baltimore, MD 21202</p></div>
       </section>
+      <i class="fa-solid fa-key"></i>
+      <br />
+      <p id="official-website">
+        Visit the
+        <a href="https://www.theowlbar.com/">The Owl Bar Official Website</a>.
+      </p>
+      </div>
       <footer>
-        <p>Visit the <a href="https://www.theowlbar.com/">official website</a> for The Owl Bar.</p>
         <div>
           <p>
-            open-source code on
-            <a href="https://github.com/L-itslocked/restaurant-page">Github</a>
+            Open-source code on
+            <a href="https://github.com/L-itslocked/restaurant-page" id="github"
+              >Github</a
+            >
             by: Laura Doyon
           </p>
         </div>
         <div>
           <a href="https://www.linkedin.com/in/doyonlaura"
-            ><i class="fa-brands fa-linkedin"></i
+            ><i class="fa-brands fa-linkedin coder-social"></i
           ></a>
           <a href="https://github.com/L-itslocked"
-            ><i class="fa-brands fa-github"></i
+            ><i class="fa-brands fa-github coder-social"></i
           ></a>
         </div>
       </footer>
