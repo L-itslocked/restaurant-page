@@ -140,22 +140,16 @@
         color: white;
       }
       .navbar {
-        margin: 15px 0 3px;
-        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 3px;
+        text-transform: lowercase;
         letter-spacing: 0.15rem;
         word-spacing: 3rem;
-        color: var(--primary-color);
-        text-transform: lowercase;
+        color: var(--primary-color) !important;
+        font-family: var(--secondary-font);
+        font-weight: 100;
       }
-      .navbar:active {
-        color: var(--heading-color);
-      }
-      .navbar:hover {
-        color: var(--accent-color);
-      }
-      .navlink {
-        color: var(--primary-color);
-      }
+
       .section1-img {
         object-fit: cover;
         width: 380px;
@@ -165,7 +159,6 @@
       .section1-img:hover {
         opacity: 50%;
       }
-      
       .contact,
       .hours,
       .location,
@@ -248,11 +241,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#menu">Menus</a>
@@ -304,68 +295,67 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/143/origina
         </main>
         <i class="fa-regular fa-beer-mug-empty"></i>
       </div>
-      </div>
-      <section>
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/148/original/3380276_lg.jpg?1681519430"
-          alt="indoor image of Owl Bar Restaurant"
-          id="restaurant-image"
-        />
+    </div>
+    <section>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/148/original/3380276_lg.jpg?1681519430"
+        alt="indoor image of Owl Bar Restaurant"
+        id="restaurant-image"
+      />
+    </section>
+    <div class="container">
+      <section id="contact">
+        <h5>Contact</h5>
+        <div class="email contact">
+          <i class="fa-solid fa-envelope"> </i
+          ><a href="mailto:info@theowlbar.com">info@theowlbar.com</a>
+        </div>
+        <div class="telephone contact">
+          <i class="fa-solid fa-phone"></i> 410.347.0888
+        </div>
+        <div class="socialmedia">
+          <a href="https://instagram.com/owlbar?igshid=YmMyMTA2M2Y="
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/TheOwlBarBmore?mibextid=LQQJ4d"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </div>
       </section>
-      <div class="container">
-        <section id="contact">
-          <h5>Contact</h5>
-          <div class="email contact">
-            <i class="fa-solid fa-envelope"> </i
-            ><a href="mailto:info@theowlbar.com">info@theowlbar.com</a>
-          </div>
-          <div class="telephone contact">
-            <i class="fa-solid fa-phone"></i> 410.347.0888
-          </div>
-          <div class="socialmedia">
-            <a href="https://instagram.com/owlbar?igshid=YmMyMTA2M2Y="
-              ><i class="fa-brands fa-square-instagram"></i
-            ></a>
-            <a href="https://www.facebook.com/TheOwlBarBmore?mibextid=LQQJ4d"
-              ><i class="fa-brands fa-square-facebook"></i
-            ></a>
-          </div>
-        </section>
-        <section>
-          <div>
-            <h5>Hours of Operation</h5>
-            <div class="row hours">
-              <div class="col-md-3">
-                <h6>Wednesday</h6>
-                <div><p>4:00pm - 11:00pm</p></div>
-              </div>
-              <div class="col-md-3">
-                <h6>Thursday-Friday</h6>
-                <div><p>4:00pm - 12:00am</p></div>
-              </div>
-              <div class="col-md-3">
-                <h6>Saturday</h6>
-                <div><p>11:00am - 12:00am</p></div>
-              </div>
-              <div class="col-md-3">
-                <h6>Sunday</h6>
-                <div><p>11:00am - 2:00pm</p></div>
-              </div>
+      <section>
+        <div>
+          <h5>Hours of Operation</h5>
+          <div class="row hours">
+            <div class="col-md-3">
+              <h6>Wednesday</h6>
+              <div><p>4:00pm - 11:00pm</p></div>
+            </div>
+            <div class="col-md-3">
+              <h6>Thursday-Friday</h6>
+              <div><p>4:00pm - 12:00am</p></div>
+            </div>
+            <div class="col-md-3">
+              <h6>Saturday</h6>
+              <div><p>11:00am - 12:00am</p></div>
+            </div>
+            <div class="col-md-3">
+              <h6>Sunday</h6>
+              <div><p>11:00am - 2:00pm</p></div>
             </div>
           </div>
-        </section>
-        <section>
-          <h5>Location</h5>
-          <div class="location"><p>1 East Chase Street</p></div>
-          <div class="location"><p>Baltimore, MD 21202</p></div>
-        </section>
-        <i class="fa-solid fa-key"></i>
-        <br />
-        <p id="official-website">
-          Visit the
-          <a href="https://www.theowlbar.com/">The Owl Bar Official Website</a>.
-        </p>
-      </div>
+        </div>
+      </section>
+      <section>
+        <h5>Location</h5>
+        <div class="location"><p>1 East Chase Street</p></div>
+        <div class="location"><p>Baltimore, MD 21202</p></div>
+      </section>
+      <i class="fa-solid fa-key"></i>
+      <br />
+      <p id="official-website">
+        Visit the
+        <a href="https://www.theowlbar.com/">The Owl Bar Official Website</a>.
+      </p>
     </div>
     <footer>
       <div>
